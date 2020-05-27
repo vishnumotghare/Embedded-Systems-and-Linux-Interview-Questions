@@ -6,6 +6,7 @@
 1. What are storage class specifier?
 
 2. What is static variable?
+
 ```markdow
 There are 3 main uses for the static.
 
