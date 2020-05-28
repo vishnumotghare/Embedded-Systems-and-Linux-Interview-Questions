@@ -45,7 +45,8 @@ There are 3 main uses for the static variable.
   * By default we can use the global variables from outside files If it is static global..that variable is limited to with in the file.
   
 ### 3. What is difference between static and extern?
-  #### Static:
+ 
+ #### Static:
   
    * The static storage class is used to declare an identifier that is a local variable either to a function or a file and that exists and   retains its value after control passes from where it was declared.
    * This storage class has a duration that is permanent.
