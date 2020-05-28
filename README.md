@@ -32,30 +32,7 @@
     * Because, register variables are stored in register memory whereas auto variables are stored in main CPU memory.
     * Only few variables can be stored in register memory. So, we can use variables as register that are used very often in a C program.
 
-**Example Program for Auto variable in C**
-      
-```c
-# include <stdio.h>
-
-void increment(void);
-
-int main()
-{
-   increment();
-   increment();
-   increment();
-   increment();
-   return 0;
-}
-void increment(void)
-{
-   auto int i = 0 ;
-   printf ( "%d ", i ) ;
-   i++;
-}
-
-Output: 0 0 0
-```
+ 
 **2. What is static variable?**
 
 There are 3 main uses for the static variable.
