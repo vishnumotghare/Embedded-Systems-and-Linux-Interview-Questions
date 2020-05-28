@@ -24,13 +24,34 @@
      Auto | CPU Memory | garbage value | local | within block |
      static | CPU Memory | zero | local | Retains the value of the variable between different function calls. | 
      register | CPU Memory | garbage | local | within block | 
-     extern | CPU Memory | zero | global | Till the end of the main program. Variable definition might be anywhere in the C program  | 
-1. **What is static variable**?
+     extern | CPU Memory | zero | global | Till the end of the main program. Variable definition might be anywhere in the C program  |
+     
+     **Note:**
+     
+       For faster access of a variable, it is better to go for register specifiers rather than auto specifiers.
+       Because, register variables are stored in register memory whereas auto variables are stored in main CPU memory.
+       Only few variables can be stored in register memory. So, we can use variables as register that are used very often in a C program.
 
-    There are 3 main uses for the static variable.
-    1. If it declares within a function: 
-       * It retains the value between function calls.
-    1. If it is declared for a function name:
-       * By default function is extern, so it will be visible from other files if the function  declaration is as static, it is invisible for the outer files.
-    1. Static for global variables:
-       * By default we can use the global variables from outside files If it is static global..that variable is limited to with in the file.
+      Example Program for Auto variable in C
+```c
+# include <stdio.h>
+
+void increment(void);
+
+int main()
+{
+   increment();
+   increment();
+   increment();
+   increment();
+   return 0;
+}
+void increment(void)
+{
+   auto int i = 0 ;
+   printf ( "%d ", i ) ;
+   i++;
+}
+
+Output: 0 0 0
+```
