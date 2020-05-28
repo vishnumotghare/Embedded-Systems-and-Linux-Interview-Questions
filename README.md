@@ -5,7 +5,28 @@
 
 1. What are storage class specifier?
 
+   Storage class specifiers in C language tells the compiler where to store a variable, how to store the variable, what is the initial value of the variable and life time of the variable.
+   
+   **Syntax:** `storage_specifier data_type variable _name`
+
+   Types of storage class specifier in c :
+   
+   There are four storage class specifier in C Language. They are,
+   
+   1. Automatic
+   2. Register
+   3. Static
+   4. Extern
+   
+   
+   Storage Specifier | Storage Place | Initial /Default value | Scope | Life Time |
+   ----------------- | ------------- | ---------------------- | ----- | --------- |
+     Auto | CPU Memory | garbage value | local | within block |
+     static | CPU Memory | zero | local | Retains the value of the variable between different function calls. | 
+     register | CPU Memory | garbage | local | within block | 
+     extern | CPU Memory | zero | global | Till the end of the main program. Variable definition might be anywhere in the C program  | 
 1. **What is static variable**?
+
     There are 3 main uses for the static variable.
     1. If it declares within a function: 
        * It retains the value between function calls.
