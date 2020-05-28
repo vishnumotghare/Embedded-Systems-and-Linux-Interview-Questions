@@ -26,11 +26,11 @@
      register | CPU Memory | garbage | local | within block | 
      extern | CPU Memory | zero | global | Till the end of the main program. Variable definition might be anywhere in the C program  |
      
-     **Note:**
-     
-      * For faster access of a variable, it is better to go for register specifiers rather than auto specifiers.
-      * Because, register variables are stored in register memory whereas auto variables are stored in main CPU memory.
-      * Only few variables can be stored in register memory. So, we can use variables as register that are used very often in a C program.
+   **Note:**
+   
+    * For faster access of a variable, it is better to go for register specifiers rather than auto specifiers.
+    * Because, register variables are stored in register memory whereas auto variables are stored in main CPU memory.
+    * Only few variables can be stored in register memory. So, we can use variables as register that are used very often in a C program.
 
 **Example Program for Auto variable in C**
       
