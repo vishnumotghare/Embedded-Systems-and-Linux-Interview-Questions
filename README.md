@@ -3,7 +3,7 @@
  
 ### Questions On Storage Class Specifier
 
-1. What are storage class specifier?
+**1. What are storage class specifier?**
 
    Storage class specifiers in C language tells the compiler where to store a variable, how to store the variable, what is the initial value of the variable and life time of the variable.
    
@@ -56,3 +56,13 @@ void increment(void)
 
 Output: 0 0 0
 ```
+**2. What is static variable?**
+
+There are 3 main uses for the static variable.
+
+1. If it declares within a function:
+  * It retains the value between function calls.
+1. If it is declared for a function name:
+  * By default function is extern, so it will be visible from other files if the function declaration is as static, it is invisible for the outer files.
+1. Static for global variables:
+  * By default we can use the global variables from outside files If it is static global..that variable is limited to with in the file.
