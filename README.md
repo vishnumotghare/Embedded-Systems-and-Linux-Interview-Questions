@@ -33,6 +33,7 @@
        Only few variables can be stored in register memory. So, we can use variables as register that are used very often in a C program.
 
       Example Program for Auto variable in C
+      
 ```c
 # include <stdio.h>
 
